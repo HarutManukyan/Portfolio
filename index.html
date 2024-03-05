@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Harut's Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <img class="header__logo" alt="logo" src="./img/logo.png" />
+        <h2 class="header__title">Harutyun Manukyan</h2>
+      </div>
+
+      <svg id="burger-menu" class="ham ham3" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+        <path
+              class="line top"
+              d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+        <path
+              class="line middle"
+              d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+        <path
+              class="line bottom"
+              d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+      </svg>
+
+      <ul id="burger-list" class="burger__list">
+        <li id="about-link" class="burger__list-item">
+          <a class="burger__list-link"> about me </a>
+        </li>
+        <li id="skills-link" class="burger__list-item">
+          <a class="burger__list-link"> skills </a>
+        </li>
+        <li id="projects-link" class="burger__list-item">
+          <a class="burger__list-link"> projects </a>
+        </li>
+        <li id="contact-link" class="burger__list-item">
+          <a class="burger__list-link"> contact me </a>
+        </li>
+        <div class="burger__btn-container">
+            <button class="burger__btn">
+              <a
+                class="burger__link"
+                target="_blank"
+                href="https://drive.google.com/file/d/17wLhYsjN4xg30xuaDSRTrB28qsSZfAVB/view?usp=drive_link"
+                rel="noreferrer"
+              >
+                Resume
+                <img src="./img/icons8-link-90.png" alt="link" class="burger__icon">
+              </a>
+            </button>
+          </div>
+      </ul>
+
+      <ul id="header-list" class="header__list">
+        <li id="about-link" class="header__list-item">
+          <a class="header__list-link"> about me </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link"> skills </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link"> projects </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link"> contact me </a>
+        </li>
+      </ul>
+      <div class="header__btn-container">
+        <button class="header__btn">
+          <a
+            class="header__link"
+            target="_blank"
+            href="https://drive.google.com/file/d/17wLhYsjN4xg30xuaDSRTrB28qsSZfAVB/view?usp=drive_link"
+            rel="noreferrer"
+          >
+            Resume
+            <img src="./img/icons8-link-90.png" alt="link" class="header__icon">
+          </a>
+        </button>
+      </div>
+    </header>
+
+    <section class="home__top">
+        <div class="home__top-left">
+          <h2 class="home__top-title">
+            Hello I am <span class="home__top-bold">Harut Manukyan.</span>
+            <br />
+            <span class="home__top-bold">Frontend</span>
+            <span class="home__top-transparent">Developer</span> <br />
+            Based In <span class="home__top-bold">Armenia</span>
+          </h2>
+          <p class="home__top-text">
+            Hi, I'm Harut, a young and energetic front-end developer. I specialize
+            in crafting seamless digital experiences by merging code and design.
+            My passion lies in staying on top of the latest trends, optimizing
+            performance, and creating impactful user interfaces. Let's build
+            something remarkable together!
+          </p>
+          <ul class="home__top-links">
+            <li class="home__top-links-item">
+              <a
+                class="home__top-link"
+                href="https://www.instagram.com/har001__/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="./img/icons8-instagram.svg"  alt="instagram" class="home__top-icon">
+              </a>
+            </li>
+            <li class="home__top-links-item">
+              <a
+                class="home__top-link"
+                href="https://www.linkedin.com/in/harutyun-manukyan-72338825a/"
+                
+                target="_blank"
+                rel="noreferrer"
+              >
+              <img src="./img/icons8-linkedin-logo.svg"  alt="LinkedIn" class="home__top-icon">
+              </a>
+            </li>
+            <li class="home__top-links-item">
+              <a
+                class="home__top-link"
+                href="https://t.me/arut_manukyan"
+                target="_blank"
+                rel="noreferrer"
+              >
+              <img src="./img/icons8-telegram-logo.svg"  alt="telegram" class="home__top-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="home__top-right">
+          <img class="home__top-img" alt="person" src='./img/home-person.png' />
+        </div>
+      </section>
+
+      <section id="skills" class="home__skills">
+        <h2 class="home__skills-title">skills and technologies</h2>
+        <h2 class="home__skills-title-back">skills and technologies</h2>
+        <ul class="home__skills-list">
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-html-logo-144.png" alt="html" class="home__skills-icon">
+            HTML5
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-css-logo-144.png" alt="css" class="home__skills-icon"> CSS
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-javascript-144.png" alt="javascript" class="home__skills-icon">
+            JavaScript
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-typescript-96.png" alt="TypeScript" class="home__skills-icon">
+            TypeScript
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-sass-144.png" alt="sass" class="home__skills-icon"> SASS
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-tailwind-css-144.png" alt="Tailwind" class="home__skills-icon">
+            Tailwind CSS
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-react-160.png" alt="ReactJS" class="home__skills-icon"> ReactJS
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-redux-144.png" alt="Redux" class="home__skills-icon"> Redux
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-git-logo-144.png" alt="Git" class="home__skills-icon"> Git
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-bootstrap-logo-48.png" alt="html" class="home__skills-icon"> Bootstrap
+          </li>
+          <li class="home__skills-list-item">
+            <img src="./img/icons8-firebase-144.png" alt="html" class="home__skills-icon"> Firebase
+          </li>
+        </ul>
+  
+        <h4 class="home__skills-more">And more</h4>
+      </section>
+    </section>
+
+
+    <section id="about" class="home__about">
+        <div class="home__about-left">
+          <img class="home__about-img" alt="person" src='./img/about-person.png' />
+        </div>
+        <div class="home__about-right">
+          <h2 class="home__about-title">
+            <span>About</span> Me
+          </h2>
+          <p class="home__about-text">
+            Hey there, I'm a seasoned front-end developer with a passion for
+            bringing digital visions to life. My journey in web development has
+            been marked by a versatile skill set that extends across various
+            technologies, with a strong foundation in JavaScript, React,
+            TypeScript, and a host of other cutting-edge tools.
+            <br />
+            <br />
+            I thrive on the intricacies of creating seamless user experiences,
+            from architecting scalable and maintainable codebases to staying
+            abreast of the latest industry trends. This dynamic approach allows
+            me to tackle diverse challenges, ensuring that every project I
+            undertake is not just functional but also pushes the boundaries of
+            innovation.
+            <br />
+            <br />
+            <div class="home__about-text-last">My commitment to excellence extends beyond the technical realm. I also bring a keen eye for design aesthetics to the table. It's the perfect fusion of form and function that I aim for in every endeavor, creating digital interfaces that not only work flawlessly but also captivate users on a visual level. My adaptability and problem-solving skills shine as I navigate the dynamic landscape of front-end development. I leverage cutting-edge libraries and frameworks to create seamless, visually compelling user experiences. Let's collaborate to transform your aspirations into digital brilliance. I'm ready to contribute to your extraordinary projects.
+        </div>
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="home__projects">
+        <h2 class="home__projects-title">my projects</h2>
+        <h2 class="home__projects-title-back">my projects</h2>
+  
+        <ul class="home__projects-list">
+          {/* ONE */}
+  
+          <li
+            style="background-color: #5ab070;"
+            class="home__projects-list-item"
+          >
+            <div class="home__projects-list-left">
+              <img class="home__projects-img" alt="project" src='./img/natours.png' />
+            </div>
+            <div class="home__projects-list-right">
+              <h2 class="home__projects-name">Natours</h2>
+              <p class="home__projects-text"> Technologies I have used</p>
+              <ul class="home__projects-tech">
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-html-logo-144.png" alt="html" class="home__projects-icon">HTML5
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-css-logo-144.png" alt="css" class="home__projects-icon">
+                    CSS3
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-sass-144.png" alt="sass" class="home__projects-icon">
+                    SASS
+                  </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-tailwind-css-144.png" alt="Tailwind" class="home__projects-icon">
+                  Tailwind CSS
+                </li>
+              </ul>
+              <div class="home__projects-btns">
+                <a
+                  class="home__projects-link"
+                  href="https://github.com/HarutManukyan/Natours"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button class="home__projects-btn styled__btn-green">
+                    see the code
+                  </button>
+                </a>
+  
+                <a
+                  href="https://harutmanukyan.github.io/Natours/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="home__projects-link"
+                >
+                  <button class="home__projects-btn home__projects-website styled__btn-green">
+                    go to website
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+  
+          {/* TWO */}
+  
+          <li
+            style="background-color: #101924;"
+            class="home__projects-list-item"
+          >
+            <div class="home__projects-list-left">
+              <img class="home__projects-img" alt="project" src='./img/vrnas.png' />
+            </div>
+            <div class="home__projects-list-right">
+              <h2 class="home__projects-name">VrNas</h2>
+              <p class="home__projects-text"> Technologies I have used</p>
+              <ul class="home__projects-tech">
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-html-logo-144.png" alt="html" class="home__projects-icon">HTML5
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-css-logo-144.png" alt="css" class="home__projects-icon">
+                    CSS3
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-sass-144.png" alt="sass" class="home__projects-icon">
+                    SASS
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-javascript-144.png" alt="javascript" class="home__projects-icon">
+                    Java Script
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-react-160.png" alt="ReactJS" class="home__projects-icon">
+                    React JS
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/react-router-icon-512x279-zswz065s.png" alt="router" class="home__projects-icon">
+                    React Router
+                  </li>
+              </ul>
+              <div class="home__projects-btns">
+                <a
+                  href="https://github.com/HarutManukyan/VRNas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button class="home__projects-btn styled__btn-blue">
+                    see the code
+                  </button>
+                </a>
+  
+                <a
+                  href="https://659a86206270e67bb0275340--dazzling-sawine-755f12.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="home__projects-link"
+                >
+                  <button class="home__projects-btn home__projects-website styled__btn-blue">
+                    go to website
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+  
+          {/* THREE */}
+  
+          <li
+            style="background-color: #6A4C39;"
+            class="home__projects-list-item"
+          >
+            <div class="home__projects-list-left">
+              <img class="home__projects-img" alt="project" src='./img/skater.png' />
+            </div>
+            <div class="home__projects-list-right">
+              <h2 class="home__projects-name">Skater</h2>
+              <p class="home__projects-text"> Technologies I have used</p>
+              <ul class="home__projects-tech">
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-html-logo-144.png" alt="html" class="home__projects-icon">HTML5
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-css-logo-144.png" alt="css" class="home__projects-icon">
+                    CSS3
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-sass-144.png" alt="sass" class="home__projects-icon">
+                    SASS
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-javascript-144.png" alt="javascript" class="home__projects-icon">
+                    Java Script
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-react-160.png" alt="ReactJS" class="home__projects-icon">
+                    React JS
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/react-router-icon-512x279-zswz065s.png" alt="router" class="home__projects-icon">
+                    React Router
+                  </li>
+                  <li class="home__projects-tech-item">
+                      <img src="./img/icons8-redux-144.png" alt="redux" class="home__projects-icon">
+                    React Redux
+                  </li>
+              </ul>
+              <div class="home__projects-btns">
+                <a
+                  href="https://github.com/HarutManukyan/Skater"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button class="home__projects-btn styled__btn-biege">
+                    see the code
+                  </button>
+                </a>
+  
+                <a
+                  href="https://65aa5d7a292a5814c2e28d3d--sage-sorbet-95f510.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="home__projects-link"
+                >
+                  <button class="home__projects-btn home__projects-website styled__btn-biege">
+                    go to website
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+  
+          {/*FOUR */}
+  
+          <li
+ 
+            style="background-color: #1F3147;"
+            class="home__projects-list-item"
+          >
+            <div class="home__projects-list-left">
+              <img class="home__projects-img" alt="project" src='./img/rooftop.png' />
+            </div>
+            <div class="home__projects-list-right">
+              <h2 class="home__projects-name">Rooftop</h2>
+              <p class="home__projects-text"> Technologies I have used</p>
+              <ul class="home__projects-tech">
+                <li class="home__projects-tech-item">
+                  <img src="./img/icons8-html-logo-144.png" alt="html" class="home__projects-icon">HTML5
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-css-logo-144.png" alt="css" class="home__projects-icon">
+                  CSS3
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-sass-144.png" alt="sass" class="home__projects-icon">
+                  SASS
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-javascript-144.png" alt="javascript" class="home__projects-icon">
+                  Java Script
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-react-160.png" alt="ReactJS" class="home__projects-icon">
+                  React JS
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/react-router-icon-512x279-zswz065s.png" alt="router" class="home__projects-icon">
+                  React Router
+                </li>
+                <li class="home__projects-tech-item">
+                    <img src="./img/icons8-redux-144.png" alt="redux" class="home__projects-icon">
+                  React Redux
+                </li>
+              </ul>
+              <div class="home__projects-btns">
+                <a
+                  href="https://github.com/HarutManukyan/Rooftop"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button class="home__projects-btn styled__btn-rooftop">
+                    see the code
+                  </button>
+                </a>
+  
+                <a
+                  href="https://rad-beignet-f43fa0.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="home__projects-link"
+                >
+                  <button class="home__projects-btn home__projects-website styled__btn-rooftop">
+                    go to website
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="home__connect">
+        <h2 class="home__connect-title">connect with me</h2>
+        <h2 class="home__connect-title-back">connect with me</h2>
+  
+        <ul class="home__connect-list">
+          <li class="home__connect-list-item">
+            <a
+              class="home__connect-link"
+              href="https://www.instagram.com/har001__/"
+              target="_blank"
+              rel="noreferrer"
+              style="color: #d00000;"
+            >
+              <img
+                src='./img/Instagram.png'
+                class="home__connect-icon"
+                alt="instagram"
+              />
+              instagram
+            </a>
+          </li>
+          <li class="home__connect-list-item">
+            <a
+              class="home__connect-link"
+              href="www.linkedin.com/in/harutyun-manukyan-72338825a"
+              target="_blank"
+              rel="noreferrer"
+              style="color: #023e8a;"
+            >
+              <img src='./img/LinkedIn.png' class="home__connect-icon" alt="linkedin" />
+              linkedin
+            </a>
+          </li>
+          <li class="home__connect-list-item">
+            <a
+              class="home__connect-link"
+              href="https://t.me/arut_manukyan"
+              target="_blank"
+              rel="noreferrer"
+              style="color: #00b4d8;"
+            >
+              <img
+                src='./img/telegram.png'
+                class="home__connect-icon"
+                alt="instagram"
+              />
+              telegram
+            </a>
+          </li>
+          <li style="color: #38040e;"  class="home__connect-list-item">
+            <img src='./img/Instagram.png' class="home__connect-icon" alt="instagram" />
+            harut.manukyan2001@mail.ru
+          </li>
+        </ul>
+  
+        <div class="home__connect-img-container">
+          <img src='./img/undraw_connection_re_lcud.svg' class="home__connect-img" alt="connect" />
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-container">
+          <img class="footer__logo" alt="logo" src="./img/logo.png" />
+          Harut Manukyan
+        </div>
+        <p class="footer__text">
+          desinged and built by <span>Harutyun Manukyan</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
